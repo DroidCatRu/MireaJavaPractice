@@ -14,5 +14,13 @@ public class Main {
 
         System.out.println(myFavoriteSquare);
         System.out.println("Square's area: " + myFavoriteSquare.getArea() + " and perimeter: " + myFavoriteSquare.getPerimeter());
+
+
+        Rectangle copyOfMySweetRect = (Rectangle) mySweetRect;
+
+        System.out.println("Downcasted rectangle:");
+        System.out.println(copyOfMySweetRect);
+        System.out.println("Rectangle's area: " + mySweetRect.getArea() + " and perimeter: " + mySweetRect.getPerimeter());
+
     }
 }
