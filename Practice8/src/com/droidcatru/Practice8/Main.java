@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        WaitList waitList = new WaitList();
+        WaitList <Integer> waitList = new WaitList <> ();
         waitList.add(5);
         waitList.add(3);
         waitList.add(4);
@@ -39,7 +39,7 @@ public class Main {
         System.out.println();
 
 
-        BoundedWaitList boundedWaitList = new BoundedWaitList(5);
+        BoundedWaitList <Integer> boundedWaitList = new BoundedWaitList <Integer> (5);
         System.out.println("Size: " + boundedWaitList.getCapacity());
         boundedWaitList.add(1);
         boundedWaitList.add(2);
@@ -51,7 +51,7 @@ public class Main {
         boundedWaitList.add(6);
         System.out.println();
 
-        UnfairWaitList unfairWaitList = new UnfairWaitList();
+        UnfairWaitList <Integer> unfairWaitList = new UnfairWaitList <Integer> ();
         unfairWaitList.add(8);
         unfairWaitList.add(7);
         unfairWaitList.add(9);
